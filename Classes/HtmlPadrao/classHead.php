@@ -4,6 +4,7 @@ include 'classMetaCharset.php';
 include 'classMetaHttp.php';
 include 'classMetaName.php';
 include 'classTitle.php';
+
 class classHead {
     public function __toString()
     {
