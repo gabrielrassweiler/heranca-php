@@ -7,7 +7,7 @@ class classTable {
     {
         $classTr = new classTr();
 
-        $retorno = "<table>";
+        $retorno = "<table class='table table-striped'>";
         $retorno .= $classTr;
         $retorno .= "</table>";
 

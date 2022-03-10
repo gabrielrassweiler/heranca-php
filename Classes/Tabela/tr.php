@@ -6,8 +6,8 @@ include "td.php";
 class classTr {
     public function __toString()
     {
-        $classTh = new classTh(['Coluna', 'Outra']);
-        $classTd = new classTd(['Teste']);
+        $classTh = new classTh(['Coluna', 'Outra', 'Alterar', 'Remover']);
+        $classTd = new classTd(['Teste', 'Teste']);
 
         $retorno = "<tr>";
         $retorno .= $classTh;

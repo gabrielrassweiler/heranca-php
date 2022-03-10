@@ -12,7 +12,7 @@ class classTh {
     {
         $retorno = '';
         foreach($this->aColunas as $coluna) {
-            $retorno .= "<th style='border: 1px solid; padding: 10px'>$coluna</th>";
+            $retorno .= "<th scope='col'>$coluna</th>";
         }
 
         return $retorno;
