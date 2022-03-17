@@ -9,11 +9,11 @@ class html {
         $classTable = new classTable();
 
         $retorno = "<!DOCTYPE html>";
-        $retorno .= "<html lang='pt-BR'>";
+        $retorno .= "<html lang='pt-BR' style='background-color: #eaeaea;'>";
 
         $retorno .= $classHead;
-        $retorno .= '<body style="width: 1000px; margin-top: 50px; margin-left: 600px">';
-        $retorno .= $this->criaMenuLateral();
+        $retorno .= '<body style="margin: 100px 300px; align-items: center">';
+        $retorno .= $this->criaMenu();
         $retorno .= $classTable;
         $retorno .= '</body>';
 
@@ -22,12 +22,15 @@ class html {
         return $retorno;
     }
 
-    public function criaMenuLateral()
+    public function criaMenu()
     {
         return '
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="?pagina=lista_pessoa">Pessoas</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="?pagina=lista_pessoa">Pessoas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?pagina=lista_produto">Produtos</a>
